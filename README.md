@@ -22,7 +22,7 @@ This repository implements:
 Clone or download this repository, then source the R script:
 
 ```r
-source("https://raw.githubusercontent.com/mghotbi/sons_pairwise/Rhizosphere-nitrogen-fate/R/sons.R")
+source("https://raw.githubusercontent.com/mghotbi/sons_pairwise/Rhizosphere-nitrogen-fate/SONS.R")
 
 ```
 ### minimal test
