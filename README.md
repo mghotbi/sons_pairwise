@@ -19,6 +19,7 @@ source("R/sons.R")
 ```
 ### minimal test
 
+```r
 otu_table <- matrix(
   c(10,0,
     5,3,
@@ -31,3 +32,4 @@ otu_table <- matrix(
 
 sons_from_otu_table(otu_table, "Community_A", "Community_B", f2_correction = "none")
 sons_from_otu_table(otu_table, "Community_A", "Community_B", f2_correction = "add1")
+```
