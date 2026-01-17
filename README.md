@@ -126,7 +126,7 @@ ht2 <- Heatmap(
 
 draw(ht2)
 ```
-computed pairwise between samples.
+ 
 <img src="https://github.com/user-attachments/assets/909b6890-dae1-4b8b-8291-8d9333099fb1"
      width="700"
      alt="SONS distance heatmap (1 - theta_yc)" />
