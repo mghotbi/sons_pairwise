@@ -89,7 +89,7 @@ distance=1−θYC​
 
 computed pairwise between samples.
 <img src="https://github.com/user-attachments/assets/83312d91-d212-4ea0-b9e9-a854c7e5b850"
-     width="800"
+     width="700"
      alt="SONS distance heatmap (1 - theta_yc)" />
 
 
