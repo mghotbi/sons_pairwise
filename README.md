@@ -146,4 +146,4 @@ The distance matrix and dendrograms were visualized as a heatmap with hierarchic
 If you use this code in academic work, please cite:
 
 - Schloss PD & Handelsman J (2006) for the SONS method
-- Cummins et al. (2025, bioRxiv; DOI: 10.1101/2025.11.24.690264) for an applied use case
+- Cummins et al. (2025, bioRxiv; DOI: 10.1101/2025.11.24.690264) 
