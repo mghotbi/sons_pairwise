@@ -22,7 +22,8 @@ This repository implements:
 Clone or download this repository, then source the R script:
 
 ```r
-source("R/sons.R")
+source("https://raw.githubusercontent.com/mghotbi/sons_pairwise/Rhizosphere-nitrogen-fate/R/sons.R")
+
 ```
 ### minimal test
 
@@ -60,3 +61,30 @@ res_none
 res_add1
 
 ```
+
+Bootstrap example
+
+```r
+
+res_bs <- sons_from_otu_table(
+  otu_table,
+  "Community_A",
+  "Community_B",
+  f2_correction = "add1",
+  bootstrap = TRUE,
+  B = 499,
+  conf = 0.95,
+  seed = 1
+)
+
+res_bs$bootstrap$intervals
+```
+ 
+
+## Citation
+
+If you use this code in academic work, please cite:
+
+- Schloss PD & Handelsman J (2006) for the SONS method
+- Cummins et al. (2025, bioRxiv)  https://www.biorxiv.org/content/10.1101/2025.11.24.690264v1.full.pdf 
+ 
