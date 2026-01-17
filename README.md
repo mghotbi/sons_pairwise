@@ -80,11 +80,10 @@ res_bs <- sons_from_otu_table(
 res_bs$bootstrap$intervals
 ```
  
-
+ 
 ## Citation
 
 If you use this code in academic work, please cite:
 
 - Schloss PD & Handelsman J (2006) for the SONS method
-- Cummins et al. (2025, bioRxiv)  https://www.biorxiv.org/content/10.1101/2025.11.24.690264v1.full.pdf 
- 
+- Cummins et al. (2025, bioRxiv; DOI: 10.1101/2025.11.24.690264) for an applied use case
