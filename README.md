@@ -131,6 +131,9 @@ computed pairwise between samples.
      width="700"
      alt="SONS distance heatmap (1 - theta_yc)" />
 
+**Figure** Heatmap and hierarchical clustering (UPGMA) of pairwise SONS distances  
+computed as `distance = 1 - theta_yc`.
+
 
 Pairwise SONS metrics were computed between all sample pairs using sons_pairwise().
 The Yue & Clayton distance (1 - theta_yc) was used as the dissimilarity metric.
