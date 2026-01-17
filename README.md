@@ -89,11 +89,9 @@ distance=1−θYC​
 
 computed pairwise between samples.
 <img src="https://github.com/user-attachments/assets/83312d91-d212-4ea0-b9e9-a854c7e5b850"
-     width="900"
+     width="800"
      alt="SONS distance heatmap (1 - theta_yc)" />
 
-<img width="1406" height="1164" alt="SONS heatmap with dendrogram" src="https://github.com/user-attachments/assets/83312d91-d212-4ea0-b9e9-a854c7e5b850" />
-How this figure was generated
 
 Pairwise SONS metrics were computed between all sample pairs using sons_pairwise().
 The Yue & Clayton distance (1 - theta_yc) was used as the dissimilarity metric.
