@@ -17,3 +17,17 @@ Just source the file:
 ```r
 source("R/sons.R")
 ```
+### minimal test
+
+otu_table <- matrix(
+  c(10,0,
+    5,3,
+    1,1,
+    0,7,
+    2,1),
+  nrow = 5, byrow = TRUE,
+  dimnames = list(paste0("OTU", 1:5), c("Community_A","Community_B"))
+)
+
+sons_from_otu_table(otu_table, "Community_A", "Community_B", f2_correction = "none")
+sons_from_otu_table(otu_table, "Community_A", "Community_B", f2_correction = "add1")
