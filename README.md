@@ -90,8 +90,7 @@ hc <- hclust(as.dist(D), method = "average")  # UPGMA-style
 
 col_fun <- colorRamp2(
   c(0, median(D), max(D)),
-  c("#08306B", "#FDBE85", "#67000D")
-)
+  c("#08306B", "#FDBE85", "#67000D"))
 
 ht <- Heatmap(
   D,
@@ -104,21 +103,18 @@ ht <- Heatmap(
   column_names_gp = grid::gpar(fontsize = 10),
   heatmap_legend_param = list(
     title_gp = grid::gpar(fontface = "bold"),
-    labels_gp = grid::gpar(fontsize = 9)
-  )
+    labels_gp = grid::gpar(fontsize = 9)  )
 )
 
 draw(ht)
 
 sample_groups <- data.frame(
   Group = rep(c("Zoo", "Wild"), each = 4),
-  row.names = colnames(otu_mat)
-)
+  row.names = colnames(otu_mat))
 
 ha <- HeatmapAnnotation(
   df = sample_groups,
-  col = list(Group = c(Zoo = "#1b9e77", Wild = "#d95f02"))
-)
+  col = list(Group = c(Zoo = "#1b9e77", Wild = "#d95f02")))
 
 ht2 <- Heatmap(
   D,
@@ -126,8 +122,7 @@ ht2 <- Heatmap(
   col = col_fun,
   cluster_rows = hc,
   cluster_columns = hc,
-  top_annotation = ha
-)
+  top_annotation = ha)
 
 draw(ht2)
 ```
