@@ -79,7 +79,24 @@ res_bs <- sons_from_otu_table(
 
 res_bs$bootstrap$intervals
 ```
- 
+ ### Example: Visualizing SONS results with a heatmap and dendrogram
+
+The figure below shows an example visualization of SONS-based community dissimilarity using the Yue & Clayton structure distance
+
+distance=1−θYC​ 
+	​
+
+
+computed pairwise between samples.
+
+<img width="1406" height="1164" alt="SONS heatmap with dendrogram" src="https://github.com/user-attachments/assets/83312d91-d212-4ea0-b9e9-a854c7e5b850" />
+How this figure was generated
+
+Pairwise SONS metrics were computed between all sample pairs using sons_pairwise().
+The Yue & Clayton distance (1 - theta_yc) was used as the dissimilarity metric.
+A distance matrix was constructed and clustered using UPGMA (average linkage).
+The distance matrix and dendrograms were visualized as a heatmap with hierarchical clustering.
+
  
 ## Citation
 
